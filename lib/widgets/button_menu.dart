@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:widgetgallery/models/models.dart';
+import '../models/Item_menu.dart';
+
 
 class ButtonMenu extends StatelessWidget {
   final MenuOption option;
@@ -10,7 +11,7 @@ class ButtonMenu extends StatelessWidget {
     return Container(
       padding: EdgeInsets.zero,
       child: CupertinoButton(
-        onPressed: () => Navigator.pushNamed(context, option.route),
+        onPressed: () => Navigator.pushReplacementNamed(context, option.route),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisSize: MainAxisSize.min,

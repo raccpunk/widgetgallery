@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:widgetgallery/models/Item_menu.dart';
 import 'package:widgetgallery/routes/app_routes.dart';
 import 'package:widgetgallery/widgets/button_menu.dart';
+import '../models/Item_menu.dart';
 
 class BottomMenu extends StatelessWidget {
   final List<MenuOption> items;
